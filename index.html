@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lygoman — разработка Telegram-ботов, парсеров и автоматизации под заказ.">
+  <title>Lygoman — разработка Telegram-ботов</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <nav class="nav container">
+      <a href="#hero" class="logo">LYGO<span>MAN</span></a>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#works">Работы</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="hero">
+      <p class="hero-tag">// доступен для заказов</p>
+      <h1>Разрабатываю <span class="accent">Telegram-ботов</span>,<br>парсеры и автоматизацию</h1>
+      <p class="hero-sub">
+        Быстро, чисто и по делу: от простого бота-визитки до систем с базой данных,
+        оплатой и админкой.
+      </p>
+      <div class="hero-actions">
+        <a href="https://vk.ru/killousi" class="btn btn-primary" target="_blank" rel="noopener">
+          Написать в ВКонтакте
+        </a>
+        <a href="#works" class="btn btn-ghost">Смотреть работы</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><b>10+</b><span>ботов написано</span></div>
+        <div class="stat"><b>&lt; 24ч</b><span>средний срок простого бота</span></div>
+      </div>
+    </section>
+
+    <section class="section container" id="services">
+      <h2 class="section-title">Что я делаю</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon">🤖</div>
+          <h3>Telegram-боты</h3>
+          <p>Магазины, рассылки, модерация, заявки, воронки продаж. Python + aiogram/telebot.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">📊</div>
+          <h3>Парсеры</h3>
+          <p>Сбор данных с сайтов и маркетплейсов, выгрузка в Excel/Google Sheets, уведомления в бот.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">⚙️</div>
+          <h3>Автоматизация</h3>
+          <p>Скрипты под рутинные задачи: обработка файлов, отчёты, интеграции с API.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">🛠</div>
+          <h3>Поддержка</h3>
+          <p>Доработка и хостинг написанных ботов, исправление ошибок, помощь с деплоем.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="works">
+      <h2 class="section-title">Работы</h2>
+      <div class="works">
+        <article class="work">
+          <div class="work-top">
+            <span class="work-badge">Telegram</span>
+            <span class="work-year">2025</span>
+          </div>
+          <h3>NFT Lygoman Marketplace</h3>
+          <p>Бот-витрина для NFT-проекта: приветственный экран с фото, меню покупки/продажи,
+          перенаправление клиентов к администратору. Продан заказчику и работает в проде.</p>
+          <div class="tags">
+            <span>Python</span><span>telebot</span><span>inline-кнопки</span>
+          </div>
+        </article>
+        <article class="work work-ghost">
+          <div class="work-top">
+            <span class="work-badge">Скоро</span>
+            <span class="work-year">2026</span>
+          </div>
+          <h3>Ваш проект здесь</h3>
+          <p>Опишите задачу — сделаю бот, парсер или автоматизацию под ваш бизнес.</p>
+          <a href="https://vk.ru/killousi" class="work-link" target="_blank" rel="noopener">Обсудить в ВКонтакте →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="contact">
+      <h2 class="section-title">Контакты</h2>
+      <div class="contact-box">
+        <h3>Есть задача? Напишите — отвечаю быстро.</h3>
+        <p>Коротко опишите, что нужно: бот, парсер или автоматизация. Оценю срок и цену бесплатно.</p>
+        <a href="https://vk.ru/killousi" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+          vk.ru/killousi
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Lygoman</span>
+      <a href="https://vk.ru/killousi" target="_blank" rel="noopener">ВКонтакте</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
